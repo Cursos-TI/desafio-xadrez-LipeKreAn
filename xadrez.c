@@ -2,31 +2,36 @@
 
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    int MovimentoBispo = 5;
+    int MovimentoTorre = 5;
+    int MovimentoRainha = 8;
 
     // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // Usando a estrutura for
+    printf("\n=== BISPO ===\n");
+    for (int i = 0; i < MovimentoBispo; i++) {
+        printf("Cima, Direita\n");
+    }
 
     // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    // Usando a estrutura while
+    printf("\n=== TORRE ===\n");
+    while (MovimentoTorre > 0) {
+        printf("Direita\n");
+        MovimentoTorre--;
+    }
 
     // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    // Usando a estrutura do while
+    printf("\n=== RAINHA ===\n");
+    do {
+        printf("Esquerda\n");
+        MovimentoRainha--;
+    } while (MovimentoRainha > 0);
 
     return 0;
 }
